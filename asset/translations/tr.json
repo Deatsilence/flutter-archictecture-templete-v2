@@ -1,0 +1,18 @@
+{
+  "home": {
+    "TITLE": "Ana Sayfa"
+  },
+  "general": {
+    "button": {
+      "SAVE": "Kaydet {}",
+      "CHANGE_LANGUAGE_TURKISH": "Dili Türkçe olarak değiştir",
+      "CHANGE_LANGUAGE_ENGLISH": "Dili İngilizce olarak değiştir"
+    },
+    "dialog": {
+      "version": {
+        "VERSION": "Versiyon",
+        "CONTENT": "Versiyon Bilgisi"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "home": {
+    "TITLE": "Home Page"
+  },
+  "general": {
+    "button": {
+      "SAVE": "Save {}",
+      "CHANGE_LANGUAGE_TURKISH": "Change the language as Turkish",
+      "CHANGE_LANGUAGE_ENGLISH": "Change the language as English"
+    },
+    "dialog": {
+      "version": {
+        "VERSION": "Version",
+        "CONTENT": "Version Information"
+      }
+    }
+  }
+}
