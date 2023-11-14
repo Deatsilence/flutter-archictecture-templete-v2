@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 
 /// Product localization manager
 @immutable
-final class ProductLozalization extends EasyLocalization {
+final class ProductLocalization extends EasyLocalization {
   /// ProductLozalization need to [child] for a wrap local item
-  ProductLozalization({
+  ProductLocalization({
     required super.child,
     super.key,
   }) : super(

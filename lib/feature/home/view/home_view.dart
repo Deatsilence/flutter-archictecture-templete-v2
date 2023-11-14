@@ -28,21 +28,25 @@ class _HomeViewState extends State<HomeView> with HomeViewMixin {
             const Text(LocaleKeys.general_button_SAVE).tr(args: ['Mert']),
             OutlinedButton(
               onPressed: () {
-                ProductLozalization.updateLanguage(
+                ProductLocalization.updateLanguage(
                   context: context,
                   value: Locales.en,
                 );
               },
-              child: const Text(LocaleKeys.general_button_CHANGE_LANGUAGE_ENGLISH).tr(),
+              child: const Text(
+                LocaleKeys.general_button_CHANGE_LANGUAGE_ENGLISH,
+              ).tr(),
             ),
             OutlinedButton(
               onPressed: () {
-                ProductLozalization.updateLanguage(
+                ProductLocalization.updateLanguage(
                   context: context,
                   value: Locales.tr,
                 );
               },
-              child: const Text(LocaleKeys.general_button_CHANGE_LANGUAGE_TURKISH).tr(),
+              child: const Text(
+                LocaleKeys.general_button_CHANGE_LANGUAGE_TURKISH,
+              ).tr(),
             ),
           ],
         ),
