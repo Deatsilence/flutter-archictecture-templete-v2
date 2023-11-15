@@ -8,14 +8,14 @@ Future<void> main() async {
   await ApplicationInitialize().make();
   runApp(
     ProductLocalization(
-      child: const _MyApp(),
+      child: const MyApp(),
     ),
   );
 }
 
 /// Start of the app
-class _MyApp extends StatelessWidget {
-  const _MyApp();
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {

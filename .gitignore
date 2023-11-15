@@ -10,7 +10,9 @@
 .svn/
 migrate_working_dir/
 
+# can not create
 *.g.dart
+*.env
 
 # IntelliJ related
 *.iml
