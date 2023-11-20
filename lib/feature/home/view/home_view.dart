@@ -1,4 +1,5 @@
 import 'package:architecture_templete_v2/feature/home/view/mixin/home_view_mixin.dart';
+import 'package:architecture_templete_v2/product/init/config/app_environment.dart';
 import 'package:architecture_templete_v2/product/init/language/locale_keys.g.dart';
 import 'package:architecture_templete_v2/product/init/product_localization.dart';
 import 'package:architecture_templete_v2/product/utility/constants/enums/locales.dart';
@@ -23,26 +24,34 @@ class _HomeViewState extends State<HomeView> with HomeViewMixin {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            ElevatedButton(
+              onPressed: () {},
+              child: Text(AppEnvironmentItems.apiKey.value),
+            ),
             const Text(LocaleKeys.general_dialog_version_VERSION).tr(),
             const Text(LocaleKeys.general_dialog_version_CONTENT).tr(),
             const Text(LocaleKeys.general_button_SAVE).tr(args: ['Mert']),
             OutlinedButton(
               onPressed: () {
-                ProductLozalization.updateLanguage(
+                ProductLocalization.updateLanguage(
                   context: context,
                   value: Locales.en,
                 );
               },
-              child: const Text(LocaleKeys.general_button_CHANGE_LANGUAGE_ENGLISH).tr(),
+              child: const Text(
+                LocaleKeys.general_button_CHANGE_LANGUAGE_ENGLISH,
+              ).tr(),
             ),
             OutlinedButton(
               onPressed: () {
-                ProductLozalization.updateLanguage(
+                ProductLocalization.updateLanguage(
                   context: context,
                   value: Locales.tr,
                 );
               },
-              child: const Text(LocaleKeys.general_button_CHANGE_LANGUAGE_TURKISH).tr(),
+              child: const Text(
+                LocaleKeys.general_button_CHANGE_LANGUAGE_TURKISH,
+              ).tr(),
             ),
           ],
         ),
