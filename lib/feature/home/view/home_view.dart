@@ -5,6 +5,7 @@ import 'package:architecture_templete_v2/product/init/product_localization.dart'
 import 'package:architecture_templete_v2/product/utility/constants/enums/locales.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:gen/gen.dart';
 
 part 'widget/home_app_bar.dart';
 
@@ -24,6 +25,13 @@ class _HomeViewState extends State<HomeView> with HomeViewMixin {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Assets.icons.icDoc.svg(package: 'gen'),
+            Assets.lottie.animLoading.lottie(package: 'gen'),
+            Assets.images.imgRocketLunch.image(
+              package: 'gen',
+              height: 50,
+              width: 50,
+            ),
             ElevatedButton(
               onPressed: () {},
               child: Text(AppEnvironmentItems.apiKey.value),
