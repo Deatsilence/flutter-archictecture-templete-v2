@@ -32,11 +32,18 @@ dependencies:
   kartal: ^3.5.0
   google_fonts: ^6.1.0
 
+  # Navigation
+  auto_route: ^7.8.4
+
   widgets:
     path: module/widgets
 
+  # Modules
   gen:
     path: module/gen
+
+  common:
+    path: module/common
 
 # dependency_overrides:
 #   cupertino_icons: ^1.0.1
@@ -48,6 +55,8 @@ dev_dependencies:
   # flutter_gen: ^5.3.2
   flutter_lints: ^2.0.0
   flutter_launcher_icons: ^0.13.1
+  auto_route_generator: ^7.3.2
+  build_runner: ^2.4.7
 
 flutter_launcher_icons:
   android: "launcher_json"
